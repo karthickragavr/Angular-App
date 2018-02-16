@@ -1,0 +1,41 @@
+<div class="w3-full w3-card w3-margin " style="height:100%">
+  <header class="w3-container w3-light-grey w3-padding-16">
+      <h3>Movie Search</h3>
+      
+    </header>
+<div class="w3-container w3-light-grey w3-padding-16">
+  <div class="w3-row w3-margin-top">
+    <div class="w3-col s10">
+      <input placeholder="Enter a Movie Name" [(ngModel)]="moviename" class="w3-input w3-border w3-padding">
+    </div>
+    <div class="w3-col s2">
+      <button (click)="searchDB()" class="w3-btn w3-padding w3-green"><a style="-webkit-transform: rotate(45deg); 
+        -moz-transform: rotate(45deg); 
+          -o-transform: rotate(45deg);
+             transform: rotate(45deg);">&#9906;</a></button>
+    </div>
+  </div>
+  <p class="w3-text-red">{{errortext}}</p>
+  </div>
+<div *ngIf="data"> 
+<ul class="w3-ul">
+<li style="text-align:center"><img [src]="data.Poster" style="size:90px * 90px"></li>
+<li> {{data.Title}} ({{data.Year}}) </li>
+
+<li>Released  : {{data.Released}}; Runtime : {{data.Runtime}}</li>
+<li>Genre : {{data.Genre}}</li>
+<li>Director  : {{data.Director}}</li>
+<li>Writer(s) : {{data.Writer}}</li>
+<li>Actors  : {{data.Actors}}</li>
+
+<li>Plot  : <br> {{data.Plot}}</li>
+
+<li>Awards  : {{data.Awards}}  </li> 
+</ul>
+</div>
+<div class="w3-container w3-light-grey w3-padding-16">
+  <div class="w3-row w3-margin-top">
+   
+  </div>
+</div>
+</div>
