@@ -13,15 +13,14 @@ import { MovieComponent } from './component/movie/movie.component';
 import { OmdbService } from './omdb.service';
 
 import { HttpClientModule } from '@angular/common/http';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    MovieComponent,
-    DashboardComponent
+    MovieComponent
   ],
   imports: [
     BrowserModule,

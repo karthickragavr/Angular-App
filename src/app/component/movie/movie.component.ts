@@ -9,6 +9,7 @@ import { Movie } from '../../movie';
 export class MovieComponent implements OnInit {
   moviename: String;
   data: Movie;
+  errortext : string;
   constructor(private _omdb: OmdbService) {
    }
 
@@ -20,6 +21,5 @@ export class MovieComponent implements OnInit {
   }
   searchDB() {
    this.data = this._omdb.searchMovie(this.moviename);
-   console.log(this.data);
   }
 }
