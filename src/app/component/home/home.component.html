@@ -3,9 +3,9 @@
     <header class="w3-container w3-light-grey w3-padding-16">
         <h3>You have {{count}} pending task!</h3>
       </header>
-<div [@list]="list.length" > 
+<div [@list]="list.length" >
 <ul class="w3-ul">
-  <li *ngFor="let x of list, let i = index" class="w3-padding-16" [routerLink]="['/about']" [queryParams]="{ id:i}">
+  <li *ngFor="let x of list, let i = index" class="w3-padding-16" [routerLink]="['/about']" [queryParams]="{id:i}">
       {{x}}
       <span style="cursor:pointer;" (click)="removeItem(i)" class="w3-right w3-margin-right">&times;</span>
   </li>

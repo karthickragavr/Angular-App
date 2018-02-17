@@ -17,11 +17,12 @@ export class AboutComponent implements OnInit {
     this.route.queryParams
       .filter(params => params.id)
       .subscribe(params => {
-        // console.log(params); {id: 0}
+        //console.log(params); {id: 0}
         this.index = params.id;
-        // console.log(this.index);
+      console.log(this.index);
       });
       this.taskdata = this._data.getList(this.index);
+      console.log(this.taskdata);
   }
 
 }
