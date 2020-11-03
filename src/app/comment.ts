@@ -1,4 +1,4 @@
-import { Commnet, Todo};
+//import { Comment, Todo} from './comment';
 export class Comment {
   id: Number;
   text: string;
