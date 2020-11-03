@@ -13,7 +13,7 @@ export class OmdbService {
   detail = this.mDetails.asObservable();
   movie: Movie;
   constructor(private http: HttpClient) {
-    this.configUrl = 'http://www.omdbapi.com/?i=tt3896198&apikey=612d22ef&t=';
+    this.configUrl = 'https://www.omdbapi.com/?i=tt3896198&apikey=612d22ef&t=';
   }
 
   getMovie(movie) {
